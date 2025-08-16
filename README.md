@@ -1,6 +1,11 @@
-🌸 Mô tả ứng dụng dự đoán loài hoa Iris
+🌸 Ứng dụng dự đoán loài hoa Iris bằng KNN
+📌 Mô tả bài làm
 
-Ứng dụng được xây dựng bằng Python, Flask và Bootstrap, kết hợp với mô hình K-Nearest Neighbors (KNN) để dự đoán loài hoa Iris dựa trên 4 thông số hình thái:
+Bài tập này triển khai một ứng dụng Machine Learning kết hợp Web App để dự đoán loài hoa Iris – một tập dữ liệu kinh điển trong học máy.
+
+Ứng dụng hoạt động như sau:
+
+Người dùng nhập vào 4 thông số hình thái cơ bản của hoa:
 
 Sepal Length (cm) – Chiều dài đài hoa
 
@@ -10,15 +15,9 @@ Petal Length (cm) – Chiều dài cánh hoa
 
 Petal Width (cm) – Chiều rộng cánh hoa
 
-⚙️ Cách hoạt động
+Hệ thống sử dụng mô hình K-Nearest Neighbors (KNN) để tính toán khoảng cách giữa dữ liệu mới và các mẫu đã có trong tập huấn luyện.
 
-Người dùng truy cập ứng dụng qua trình duyệt web.
-
-Nhập 4 thông số (chiều dài, chiều rộng đài hoa và cánh hoa).
-
-Ứng dụng gửi dữ liệu về server Flask.
-
-Mô hình KNN (được huấn luyện sẵn trên tập dữ liệu Iris) sẽ dự đoán loài hoa:
+Dựa trên đa số “hàng xóm gần nhất”, mô hình đưa ra dự đoán loài hoa thuộc một trong ba loại:
 
 Iris-setosa
 
@@ -26,38 +25,31 @@ Iris-versicolor
 
 Iris-virginica
 
-Kết quả hiển thị ngay trên giao diện web với thiết kế đẹp mắt bằng Bootstrap.
+Kết quả được hiển thị ngay trên giao diện web dưới dạng thông báo trực quan.
 
-🎨 Giao diện
+Điểm nổi bật:
 
-Giao diện sử dụng Bootstrap 5 giúp đơn giản nhưng hiện đại.
+Giao diện được xây dựng bằng Bootstrap 5, đơn giản nhưng hiện đại.
 
-Form nhập liệu có validation (bắt buộc nhập số).
+Người dùng không cần biết lập trình vẫn có thể trải nghiệm trực tiếp mô hình AI qua web.
 
-Kết quả hiển thị trong một khung thông báo (alert) màu xanh để nổi bật.
+Ứng dụng minh họa cách đưa một mô hình Machine Learning từ môi trường nghiên cứu vào triển khai thực tế.
 
-Biểu tượng hoa 🌸 tạo sự sinh động.
+⚙️ Công nghệ, thuật toán, ngôn ngữ sử dụng
 
-💻 Công nghệ sử dụng
+Ngôn ngữ lập trình: Python
 
-Python: ngôn ngữ lập trình chính.
+Framework Web: Flask
 
-Flask: framework web để xử lý request/response.
+Machine Learning: Scikit-learn với thuật toán K-Nearest Neighbors (KNN)
 
-Scikit-learn: thư viện Machine Learning, dùng huấn luyện mô hình KNN.
+Xử lý dữ liệu: Pandas, NumPy
 
-Bootstrap 5: làm đẹp giao diện web.
+Frontend: HTML5, CSS3, Bootstrap 5
 
-Pandas: xử lý dữ liệu Iris CSV.
+IDE/Môi trường phát triển: VSCode, Jupyter Notebook
 
-📊 Ý nghĩa ứng dụng
-
-Minh họa cách kết hợp Machine Learning và Web App.
-
-Giúp người dùng trải nghiệm mô hình AI theo cách trực quan, không cần code.
-
-Có thể mở rộng cho các bài toán phân loại khác (ví dụ: dự đoán bệnh, phân loại sản phẩm, nhận diện khách hàng).
-
-<img width="845" height="644" alt="image" src="https://github.com/user-attachments/assets/ca5dc3c1-077f-4fe4-b973-9ae4d8ba920e" />
-<img width="866" height="744" alt="image" src="https://github.com/user-attachments/assets/7296c1bc-a9a3-4a9b-855d-4ae8a55c9b24" />
+Dataset: Iris Dataset (gồm 150 mẫu, chia thành 3 loài hoa)
+<img width="845" height="644" alt="Screenshot 2025-08-16 110115" src="https://github.com/user-attachments/assets/fb2cd61f-2551-4800-8f53-b878a1398f7e" />
+<img width="866" height="744" alt="Screenshot 2025-08-16 110140" src="https://github.com/user-attachments/assets/ad58e113-b342-4d82-a8c8-c8216dd6ee8c" />
 
